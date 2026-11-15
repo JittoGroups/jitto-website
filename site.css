@@ -332,3 +332,21 @@ footer a:hover{color:var(--cyan)}
 
 /* keep our call bar clear of the Netlify badge */
 @media (max-width:760px){.callbar{bottom:84px}footer{padding-bottom:180px}}
+
+
+/* ===== bright hero: full photo, text on a white card ===== */
+.hero.hero-photo{background:url(hero.jpg) center/cover no-repeat,var(--light) !important}
+.hero.hero-photo::after{display:none}
+.hero.hero-photo .wrap>div:first-child{background:rgba(255,255,255,.93);border-radius:24px;padding:2.4rem 2.2rem;box-shadow:0 20px 50px rgba(13,27,51,.18);backdrop-filter:blur(4px)}
+.hero.hero-photo h1{color:var(--navy);text-shadow:none}
+.hero.hero-photo h1 em{color:var(--teal-dark)}
+.hero.hero-photo .lead{color:var(--slate);text-shadow:none}
+.hero.hero-photo .note{color:var(--slate);text-shadow:none}
+.hero.hero-photo .eyebrow{color:var(--teal-dark) !important}
+.hero.hero-photo .btn-ghost{border-color:var(--navy);color:var(--navy)}
+.hero.hero-photo .btn-ghost:hover{background:var(--navy);color:#fff}
+.hero.hero-photo svg.path path{stroke:#fff;opacity:.95}
+@media (max-width:760px){
+  .hero.hero-photo{background:url(hero.jpg) center top/cover no-repeat,var(--light) !important;padding:40px 0 60px}
+  .hero.hero-photo .wrap>div:first-child{padding:1.6rem 1.3rem}
+}
