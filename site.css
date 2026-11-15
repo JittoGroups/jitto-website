@@ -400,3 +400,19 @@ footer a:hover{color:var(--cyan)}
   .hero.hero-photo .hero-band{padding:30px 0 28px}
   .hero.hero-photo .hero-pic{min-height:58vh;padding-bottom:104px}
 }
+
+
+/* ===== slimmer navy band so more photo shows ===== */
+.hero.hero-photo .hero-band{padding:22px 0 20px}
+.hero.hero-photo .hero-band .eyebrow{margin-bottom:.4rem}
+.hero.hero-photo .hero-band h1{font-size:clamp(1.7rem,3.2vw,2.5rem);margin-bottom:.3em;max-width:none}
+.hero.hero-photo .hero-band .lead{font-size:1rem;margin-bottom:.2em}
+.hero.hero-photo .hero-band .note{font-size:.9rem}
+.hero.hero-photo .hero-pic{min-height:calc(100vh - 330px);padding-bottom:28px}
+@media (min-width:1100px){.hero.hero-photo .hero-band .lead{max-width:none}}
+@media (max-width:760px){
+  .hero.hero-photo .hero-band{padding:18px 0 16px}
+  .hero.hero-photo .hero-band h1{font-size:1.6rem}
+  .hero.hero-photo .hero-band .lead{font-size:.95rem}
+  .hero.hero-photo .hero-pic{min-height:52vh;padding-bottom:100px}
+}
