@@ -378,3 +378,5 @@ footer a:hover{color:var(--cyan)}
   .hero.hero-photo{background-position:center 70% !important}
   .hero.hero-photo .wrap{min-height:82vh;padding:28px 0 110px}
 }
+
+.hero.hero-photo .wrap{align-items:stretch !important}
