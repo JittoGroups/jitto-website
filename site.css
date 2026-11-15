@@ -365,3 +365,16 @@ footer a:hover{color:var(--cyan)}
 .hero.hero-photo .wrap>div:first-child{max-width:760px}
 .hero.hero-photo{padding:110px 0 120px}
 @media (max-width:760px){.hero.hero-photo{padding:56px 0 70px}}
+
+
+/* ===== showcase layout: headline up by the ceiling, buttons bottom-left, room visible in between ===== */
+.hero.hero-photo{padding:0 !important;background-position:center 60% !important}
+.hero.hero-photo .wrap{display:flex !important;min-height:min(88vh,860px);padding:44px 0 52px}
+.hero.hero-photo .wrap>div:first-child{display:flex;flex-direction:column;width:100%;max-width:none !important}
+.hero.hero-photo h1{max-width:900px;margin-bottom:.35em}
+.hero.hero-photo .lead{max-width:640px}
+.hero.hero-photo .ctas{margin-top:auto}
+@media (max-width:760px){
+  .hero.hero-photo{background-position:center 70% !important}
+  .hero.hero-photo .wrap{min-height:82vh;padding:28px 0 110px}
+}
