@@ -350,3 +350,10 @@ footer a:hover{color:var(--cyan)}
   .hero.hero-photo{background:url(hero.jpg) center top/cover no-repeat,var(--light) !important;padding:40px 0 60px}
   .hero.hero-photo .wrap>div:first-child{padding:1.6rem 1.3rem}
 }
+
+
+/* ===== no white card: text directly on photo ===== */
+.hero.hero-photo .wrap>div:first-child{background:none !important;box-shadow:none !important;backdrop-filter:none !important;padding:0 !important;border-radius:0}
+.hero.hero-photo h1{text-shadow:0 0 18px rgba(255,255,255,.95),0 0 4px rgba(255,255,255,.9) !important}
+.hero.hero-photo .lead,.hero.hero-photo .note,.hero.hero-photo .eyebrow{color:var(--navy) !important;font-weight:600;text-shadow:0 0 12px rgba(255,255,255,1),0 0 3px rgba(255,255,255,1) !important}
+.hero.hero-photo .btn-ghost{background:rgba(255,255,255,.85)}
