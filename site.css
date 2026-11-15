@@ -380,3 +380,23 @@ footer a:hover{color:var(--cyan)}
 }
 
 .hero.hero-photo .wrap{align-items:stretch !important}
+
+
+/* ===== navy band on top + big photo below ===== */
+.hero.hero-photo{background:var(--navy) !important;padding:0 !important;display:block !important;overflow:visible}
+.hero.hero-photo::after{display:none !important}
+.hero.hero-photo .hero-band .wrap,.hero.hero-photo .hero-pic .wrap{display:block !important;min-height:0 !important;padding:0 !important}
+.hero.hero-photo .hero-band{background:var(--navy);padding:46px 0 42px}
+.hero.hero-photo .hero-band .eyebrow{display:inline-flex !important;flex-direction:row !important;width:auto !important;color:var(--cyan) !important;text-shadow:none !important;background:none !important;padding:0 !important}
+.hero.hero-photo .hero-band h1{color:#fff !important;text-shadow:none !important;font-weight:700;max-width:1050px;margin-bottom:.35em}
+.hero.hero-photo .hero-band h1 em{color:var(--cyan) !important}
+.hero.hero-photo .hero-band .lead{color:#fff !important;font-weight:600;text-shadow:none !important;max-width:780px;margin-bottom:.4em}
+.hero.hero-photo .hero-band .note{color:#9fd8d2 !important;font-weight:600;text-shadow:none !important;margin:0}
+.hero.hero-photo .hero-pic{background:url(hero.jpg) center 62%/cover no-repeat;min-height:min(68vh,680px);display:flex;align-items:flex-end;padding-bottom:40px}
+.hero.hero-photo .hero-pic .wrap{width:min(1140px,100% - 40px)}
+.hero.hero-photo .hero-pic .ctas{display:flex !important;flex-direction:row !important;flex-wrap:wrap;width:auto !important;margin:0 !important;background:none !important;padding:0 !important}
+.hero.hero-photo .hero-pic .btn-ghost{background:rgba(255,255,255,.95) !important;border-color:#fff !important;color:var(--navy) !important}
+@media (max-width:760px){
+  .hero.hero-photo .hero-band{padding:30px 0 28px}
+  .hero.hero-photo .hero-pic{min-height:58vh;padding-bottom:104px}
+}
