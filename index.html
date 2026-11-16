@@ -313,7 +313,11 @@
 /* ===== SETTINGS — edit these ===== */
 const FORM_EMAIL = "info@jittogroups.ca";   // where form requests are delivered
 // QuickBooks payment links for each gift card amount. Paste the full link between the quotes.
-const GIFT_PAY_LINKS = { "100": "", "200": "", "300": "" };
+const GIFT_PAY_LINKS = {
+  "100": "https://connect.intuit.com/pay/Jitto/scs-v1-d8a8ba114c834677a65b79a20475c1ceb100a5fc455f4b3bbc490f536746c2d1ce04d501543b4d3f9874a12d80dafcb9-0?locale=EN_CA",
+  "200": "https://connect.intuit.com/pay/Jitto/scs-v1-8f9fafc02d8d4a97853da6c9d2cbabb514ac642903ea475ca5cbc79551c1a4046eca4f64030a4c519533d91faffd29c3-0?locale=EN_CA",
+  "300": "https://connect.intuit.com/pay/Jitto/scs-v1-080ab3083acb4475abef66262fc431dce465ef06f4104167b595ea6ed54179c9d8ec9177f6e644f9a90948b3b4dcb233-0?locale=EN_CA"
+};
 /* ================================= */
 
 document.getElementById('yr').textContent = new Date().getFullYear();
